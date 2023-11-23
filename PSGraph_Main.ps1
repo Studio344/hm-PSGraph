@@ -13,8 +13,8 @@ $tokenResponse = getDelegatedAccessToken
 ##### リクエストの実行 ############################################################################################
 # ---------  GET メソッドの実行 ---------
 # 変数: getURL に、リクエスト URL を設定します
-$getURL = 'https://graph.microsoft.com/v1.0/XXXXXXXXXXXXXXXXXXXXXXXX'
-# ＜例＞ $getURL = 'https://graph.microsoft.com/v1.0/groups?$filter=resourceProvisioningOptions/Any(x:x eq "Team")' など
+$getURL = "https://graph.microsoft.com/v1.0/XXXXXXXXXXXXXXXXXXXXXXXX"
+# ＜例＞ $getURL = "https://graph.microsoft.com/v1.0/groups?`$filter=resourceProvisioningOptions/Any(x:x eq 'Team')" など
 
 # アクセストークン ($tokenResponse) をもって、リクエスト URL (getURL) に対して GET リクエストを実行します
 doGET $tokenResponse $getURL
